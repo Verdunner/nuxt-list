@@ -1,0 +1,8 @@
+@use './variables';
+@use './mixins';
+@use './catalog';
+@use './product-card';
+
+* {
+    box-sizing: border-box;
+}
