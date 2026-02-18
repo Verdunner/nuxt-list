@@ -1,0 +1,21 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    padding: 16px;
+
+    &__image-wrapper {
+        position: relative;
+    }
+
+    &__favorite {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+    }
+}
