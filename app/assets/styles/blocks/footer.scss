@@ -1,0 +1,26 @@
+@use '@/assets/styles/abstracts/variables' as vars;
+
+.footer {
+    display: flex;
+    padding: 100px vars.$gap-container;
+    background-color: #000000;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        width: calc(100% / 4);
+        // border: 1px solid greenyellow;
+        font-size: 14px;
+
+        &-title {
+            color: #6f6f6f;
+        }
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+    }
+}

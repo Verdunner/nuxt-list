@@ -1,0 +1,67 @@
+@use '@/assets/styles/abstracts/variables' as vars;
+
+.header {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: vars.$height-header-desktop;
+    background: #ffffff;
+    // border-bottom: 1px solid red;
+
+    &__logo {
+        position: absolute;
+        left: vars.$gap-container;
+
+        $size: 42px;
+        width: $size;
+        height: $size;
+        background-color: vars.$color-accent;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding: 10px 24px;
+        background-color: #f5f5f5;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    &__burger {
+        display: none;
+        font-size: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        height: vars.$height-header-mobile;
+        &__menu {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+}

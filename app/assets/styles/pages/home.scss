@@ -1,0 +1,42 @@
+@use '@/assets/styles/abstracts/variables' as vars;
+
+.home {
+    height: calc(100vh - vars.$height-header-desktop);
+    // background-color: slategray;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        height: calc(100vh - vars.$height-header-mobile);
+    }
+
+    &__content {
+        padding: 0 vars.$gap-container;
+        // border: 1px solid blue;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 40px;
+        font-size: 64px;
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 124px;
+        height: 40px;
+        padding: 0 16px;
+
+        color: white;
+        background-color: vars.$color-accent;
+        text-decoration: none;
+
+        &:hover {
+            background-color: darken(vars.$color-accent, 10%);
+        }
+    }
+}

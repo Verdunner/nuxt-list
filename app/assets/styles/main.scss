@@ -1,8 +1,6 @@
-@use './variables';
-@use './mixins';
-@use './catalog';
-@use './product-card';
-@use './header';
+@use './abstracts/variables';
+@use './pages/_pages';
+@use './blocks/_blocks';
 
 * {
     box-sizing: border-box;
@@ -10,5 +8,4 @@
 
 body {
     margin: 0;
-    background-color: slategray;
 }
