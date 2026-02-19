@@ -2,7 +2,13 @@
 @use './mixins';
 @use './catalog';
 @use './product-card';
+@use './header';
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: slategray;
 }

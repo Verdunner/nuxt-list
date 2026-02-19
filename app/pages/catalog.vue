@@ -15,11 +15,12 @@ const products = computed<Product[]>(() => data.value?.products ?? []);
 
             <div v-else-if="error" class="catalog__error">Ошибка загрузки</div>
 
-            <div v-else class="catalog__grid">
+            <div v-else class="catalog__list">
                 <ProductCard
                     v-for="product in products"
                     :key="product.id"
                     :product="product"
+                    class="catalog__item"
                 />
             </div>
         </div>
