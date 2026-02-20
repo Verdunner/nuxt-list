@@ -1,11 +1,15 @@
+/**
+* Abstracts
+*/
 @use './abstracts/variables';
+@use './abstracts/mixins';
+/**
+* Base
+*/
+@use './base/fonts';
+@use './base/generic';
+/*
+* Components
+*/
 @use './pages/_pages';
 @use './blocks/_blocks';
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}

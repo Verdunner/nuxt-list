@@ -1,0 +1,13 @@
+@use '../abstracts/mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    @include mixins.fonts;
+}
+
+body {
+    margin: 0;
+}

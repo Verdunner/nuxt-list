@@ -1,0 +1,18 @@
+@use '@/assets/styles/abstracts/variables' as vars;
+
+@font-face {
+    $font-name: '#{vars.$font-family-custom}-Regular';
+
+    font-family: vars.$font-family-custom;
+    font-weight: vars.$font-weight-regular;
+    font-style: normal;
+    src: url('#{vars.$font-path}/#{$font-name}.ttf') format('ttf');
+}
+@font-face {
+    $font-name: '#{vars.$font-family-custom}-Medium';
+
+    font-family: vars.$font-family-custom;
+    font-weight: vars.$font-weight-medium;
+    font-style: normal;
+    src: url('#{vars.$font-path}/#{$font-name}.ttf') format('ttf');
+}

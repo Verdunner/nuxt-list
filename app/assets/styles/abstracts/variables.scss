@@ -1,12 +1,41 @@
+/**
+* Colors
+*/
 $color-accent: #ff0000;
+
+/**
+* Fonts
+*/
+// $font-path: '/public/fonts';
+$font-path: '/fonts';
+
+$font-family-custom: 'GolosText';
+$font-family-default: sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+/**
+* Breakpoints
+*/
 // $screen-desktop: '(min-width: 1440px)';
+
+/**
+* Layout
+*/
 // $width-container: 1240px;
 $gap-container: 60px;
 
+/**
+* Sizes
+*/
 $height-header-desktop: 80px;
 $height-header-mobile: 60px;
 
 // $height-footer-mobile: 275px;
 // $height-footer-desktop: 102px;
 
+/**
+* Z-indexes
+*/
 // $z-index-header: 50;

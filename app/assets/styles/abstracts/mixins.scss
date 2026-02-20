@@ -1,0 +1,8 @@
+@use '@/assets/styles/abstracts/variables' as vars;
+
+@mixin fonts {
+    font-family: vars.$font-family-custom, vars.$font-family-default;
+    font-style: normal;
+
+    text-rendering: optimizeLegibility;
+}
